@@ -1,0 +1,32 @@
+main {
+  margin: 60px 120px;
+  max-width: 1400px;
+  min-height: 500px;
+
+  .wrapper__main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    &__text {
+      grid-column: 1 / span 3;
+      h1 {
+        margin-top: 100px;
+        font-size: 80px;
+      }
+      p {
+        margin-top: 20px;
+        letter-spacing: 1.2px;
+        line-height: 1.5;
+      }
+    }
+
+    &__image {
+      grid-column: 4 / span 2;
+    }
+  }
+
+  img {
+    width: 100%;
+    min-height: 500px;
+  }
+}

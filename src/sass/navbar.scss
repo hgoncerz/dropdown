@@ -2,8 +2,15 @@ nav {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  p {
-    font-size: 18px;
+  div {
+    display: flex;
+    p {
+      font-size: 18px;
+    }
+    svg {
+      margin-left: 6px;
+      margin-top: 6px;
+    }
   }
 
   .nav__snap {
@@ -18,11 +25,11 @@ nav {
   }
   .nav__register {
     text-align: center;
-    padding: 10px;
+    padding: 0px 16px;
 
     p {
       border: 2px solid hsl(0, 0%, 41%);
-      padding: 14px;
+      padding: 12px;
       border-radius: 10px;
     }
   }
